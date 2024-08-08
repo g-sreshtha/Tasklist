@@ -1,0 +1,77 @@
+#dialogbox-container {
+  position: absolute; /* Ensure the dialog is fixed relative to the viewport */
+  top: 50%; /* Position the dialog vertically in the middle of the viewport */
+  left: 50%; /* Position the dialog horizontally in the middle of the viewport */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move the dialog box up and left by 50% of its own width and height */
+  width: 30%; /* Set the width of the dialog box */
+  /* height: 60%; Set the height of the dialog box */
+  background-color: #6a5e67; /* Set the background color */
+  color: white;
+  box-shadow: 0.3rem 0.3rem 0.8rem 0.5rem rgba(0, 0, 0, 0.05); /* Apply box shadow */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  z-index: 2; /* Ensure the dialog appears above other content */
+  transition: 2s; /* Apply transition effect */
+  border-radius: 30px;
+  padding-top: 20px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rows > * {
+  margin-bottom: 10px;
+}
+
+.change-buttons {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.change-buttons > button {
+  margin: 30px;
+}
+
+.namebox {
+  border-radius: 10px;
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+
+.datebox {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  /* background-color: white !important; */
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.dropdown {
+  padding: 5px;
+  border-radius: 10px;
+}

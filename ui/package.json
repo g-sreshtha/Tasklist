@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.16",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55"
+  }
+}
